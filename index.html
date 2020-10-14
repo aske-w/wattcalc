@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <title>WattCalc</title>
+</head>
+
+<body class="bg-light">
+    <div class="container" >
+        <div class="jumbotron mt-3">
+            <h1 class="text-center"><strong>WattCalc</strong> - Mr.Mine Drill Power calculator</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <form id="form">
+                    <div class="form-group">
+                        <label for="engine">Engine</label>
+                        <select name="engine" id="engines" class="form-control" onchange="updateSelected(this)">
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="drill">Drill</label>
+                        <select name="drill" id="drills" class="form-control" onchange="updateSelected(this)">
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="cooler">Cooler</label>
+                        <select name="cooler" id="coolers" class="form-control" onchange="updateSelected(this)">
+                        </select>
+                    </div>
+                    <div class="row justify-content-center">
+                        <button type="button" class="btn btn-info mr-3" data-toggle="modal" data-target="#guideModal">
+                            Guide
+                        </button>
+                        <button type="submit" class="btn btn-success">Calculate!</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-12 col-md-5">
+                <h3 class="text-left">
+                    Results
+                </h3>
+                <p title="Wattage calculated as shown in the breakdown">
+                    Total drill power: <dummy id="totalPower" ></dummy> watts
+                </p>
+                <p>
+                    Breakdown: <dummy id="multiplier" title="Engine multiplier"></dummy> ⋅ (<dummy id="enginePower" title="Engine wattage"></dummy> + <dummy id="drillPower" title="Drill wattage"></dummy> + <dummy id="coolerPower" title="Cooler wattage"></dummy>) watts
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Modals-->
+    <div class="modal fade" id="guideModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">User guide</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4>Introduction</h4>
+                    <p>
+                        This website features a calculator to calculate the total drill power given different drill parts in Mr.Mine.
+                        The tier 1 drill parts are selected per default.
+                    </p>
+                    <h4>User guide</h4>
+                    <p>
+                        <ol>
+                            <li>Select engine</li>
+                            <li>Select drill</li>
+                            <li>Select cooler</li>
+                            <li>Click 'Calculate!'</li>
+                            <li>Read the results</li>
+                        </ol>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var selectedEngine = null;
+    var selectedDrill = null;
+    var selectedCooler = null;
+    var engines = 
+    [ 
+        "engines",
+        {
+            name : "Junk Engine",
+            multiplier : 1,
+            power : 1
+        },
+        {
+            name : "Steam Engine",
+            multiplier : 1,
+            power : 5
+        },
+        {
+            name : "2 Cylinder Engine",
+            multiplier : 1.5,
+            power : 10
+        },
+        {
+            name : "4 Cylinder Engine",
+            multiplier : 4,
+            power : 10
+        },
+        {
+            name : "6 Cylinder Engine",
+            multiplier : 10,
+            power : 10
+        },
+        {
+            name : "Basic Nuclear Engine",
+            multiplier : 20,
+            power : 30
+        },
+        {
+            name : "Intermediate Nuclear Engine",
+            multiplier : 150,
+            power : 30
+        },
+        {
+            name : "Advanced Nuclear Engine",
+            multiplier : 500,
+            power : 50
+        },
+        {
+            name : "Fission Engine",
+            multiplier : 3000,
+            power : 70
+        },
+        {
+            name : "Drill King Engine",
+            multiplier : 20000,
+            power : 70
+        },
+        {
+            name : "Drill Lord Engine",
+            multiplier : 100000,
+            power : 75
+        },
+        {
+            name : "Seismic Resonance Engine",
+            multiplier : 200000,
+            power : 200
+        },
+        {
+            name : "Gravity Engine",
+            multiplier : 300000,
+            power : 1000
+        },
+        {
+            name : "Core Reactor Engine",
+            multiplier : 500000,
+            power : 5000
+        }
+    ];
+    var drills = 
+    [
+        "drills",
+        {
+            name : "Tiny Drill",
+            power : 2
+        },
+        {
+            name : "Copper Drill",
+            power : 5
+        },
+        {
+            name : "Silver Drill",
+            power : 50
+        },
+        {
+            name : "Platinum Drill",
+            power : 300
+        },
+        {
+            name : "TriPlatinum Drill",
+            power : 700
+        },
+        {
+            name : "Spike Drill",
+            power : 1500
+        },
+        {
+            name : "Barbaric Drill",
+            power : 5500
+        },
+        {
+            name : "Monster Drill",
+            power : 9000
+        },
+        {
+            name : "Sifting Drill",
+            power : 20000
+        },
+        {
+            name : "Smashing Drill",
+            power : 40000
+        },
+        {
+            name : "King Drill",
+            power : 100000
+        },
+        {
+            name : "Lava Drill",
+            power : 160000
+        },
+        {
+            name : "Gravity Drill",
+            power : 250000
+        },
+        {
+            name : "Irradiated Drill",
+            power : 500000
+        }
+
+    ];
+    var coolers = 
+    [
+        "coolers",
+        {
+            name : "Basic Fan",
+            power : 2
+        },
+        {
+            name : "Double Fan",
+            power : 5
+        },
+        {
+            name : "Triple Fan",
+            power : 25
+        },
+        {
+            name : "Quad Fan",
+            power : 300
+        },
+        {
+            name : "Partinioned Fan",
+            power : 600
+        },
+        {
+            name : "Multi Partinioned Fan",
+            power : 1000
+        },
+        {
+            name : "Heat Pump",
+            power : 2700
+        },
+        {
+            name : "Segmented Heat Pump",
+            power : 6000
+        },
+        {
+            name : "Hydrogen Coolant System",
+            power : 10000
+        },
+        {
+            name : "Bihydrogen Coolant System",
+            power : 20000
+        },
+        {
+            name : "Trihydrogen Coolant System",
+            power : 40000
+        },
+        {
+            name : "Liquid Nitrogen Fan",
+            power : 90000
+        },
+        {
+            name : "Pressure Cooled Fan",
+            power : 180000
+        },
+        {
+            name : "9M PSI Pressure Fan",
+            power : 250000
+        }
+    ];
+
+    populateForm(engines);
+    populateForm(drills);
+    populateForm(coolers);
+    firstload();
+
+    function updateSelected(element)
+    {
+        var type = element.id;
+        switch (type) 
+        {
+            case "engines":
+                selectedEngine = typeLookup(element.value);
+                break;
+            case "drills":
+                selectedDrill = typeLookup(element.value);
+                break;
+            case "coolers":
+                selectedCooler = typeLookup(element.value);
+                break;
+            default:
+                throw "Unknown type " + type; 
+                break;
+        }
+
+        if(selectedEngine != null && selectedDrill != null && selectedCooler != null) calculate();
+    }
+
+    function calculate()
+    {
+        var total = document.getElementById("totalPower");
+        total.innerHTML = numformat(selectedEngine.multiplier * (selectedCooler.power +  selectedDrill.power + selectedEngine.power));
+
+        var multiplier = document.getElementById("multiplier"); 
+        var enginePower = document.getElementById("enginePower"); 
+        var drillPower = document.getElementById("drillPower"); 
+        var coolerPower = document.getElementById("coolerPower"); 
+        multiplier.innerHTML = numformat(selectedEngine.multiplier);
+        enginePower.innerHTML = numformat(selectedEngine.power);
+        drillPower.innerHTML = numformat(selectedDrill.power);
+        coolerPower.innerHTML = numformat(selectedCooler.power);
+    }
+
+    function numformat(number)
+    {
+        return new Intl.NumberFormat("en-US",{style: "decimal"}).format(number);
+    }
+
+    function submit()
+    {
+        calculate();
+    }
+
+    function typeLookup(val)
+    {
+        var type = null;
+        switch (val.substring(val.length - 1)) {  
+            case "e":
+            for (let i = 1; i < engines.length; i++) {
+                var element = engines[i];
+                if(element.val == val) return element;
+            }  
+            break;
+            case "d":
+            for (let i = 1; i < drills.length; i++) {
+                var element = drills[i];
+                if(element.val == val) return element;
+            }  
+            break;
+            case "c":
+            for (let i = 1; i < coolers.length; i++) {
+                var element = coolers[i];
+                if(element.val == val) return element;
+            }
+            break;
+            default:
+            throw "Unknown type val: " + val;
+                break;
+        }
+        return type;
+    }
+    
+    function populateForm(array)
+    {
+        var type = array[0];
+        var shorthand = type.substring(0,1);
+        var element = document.getElementById(type);
+        for (let i = 1; i < array.length; i++) {
+            var engine = array[i];
+            var option = document.createElement("option");
+            option.value = "t" + i + shorthand;
+            engine.val = option.value;
+            option.innerHTML = engine.name;
+            element.appendChild(option);
+        }
+    }
+
+    function firstload() 
+    {
+        document.getElementById("form").addEventListener("submit", function(event){
+            event.preventDefault();
+            updateAll();
+            calculate();
+        });
+        updateAll();
+    }
+
+    function updateAll()
+    {
+        updateSelected(document.getElementById("engines"));
+        updateSelected(document.getElementById("drills"));
+        updateSelected(document.getElementById("coolers"));
+    }
+</script>
+</html>
