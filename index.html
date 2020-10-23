@@ -455,6 +455,11 @@
         });
         updateAll();
         if(getCookie("consent") != "true") showConsentMessage();
+        else
+        {
+            injectGTMSource();
+            injectGTag();
+        }
     }
 
     function getCookie(cname) 
