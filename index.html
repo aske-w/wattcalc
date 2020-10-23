@@ -63,6 +63,18 @@
         </div>
     </div>
 
+    <div style="width:100vw;position:absolute;bottom:0px;height:33vh;display:none" class="bg-dark text-white" id="cookieConsent">
+        <div class="container">
+            <h3>Dear user</h3>
+            <p>
+                Thank you for using this site! <br>
+                We collect analytics data using Google Analytics in order for us to provide you with the best user experience possible. <br>
+                But in order to do that you have to consent to the collection of these analytics data.
+            </p>
+            <button class="btn btn-success" onclick="consent()">Accept all cookies</button>
+        </div>
+    </div>
+
 
     <!--Modals-->
     <div class="modal fade" id="guideModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -99,7 +111,11 @@
         </div>
     </div>
 </body>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script id="gtm"></script>
+<script id="gtag"></script>
 <script>
+    //var consent = false;
     var selectedEngine = null;
     var selectedDrill = null;
     var selectedCooler = null;
@@ -304,6 +320,34 @@
     populateForm(coolers);
     firstload();
 
+    function consent()
+    {
+        document.cookie = "consent=true";
+        injectGTMSource();
+        injectGTag();
+        hideConsentMessage();
+    }
+
+    function injectGTMSource()
+    {
+        document.getElementById("gtm").setAttribute("src","https://www.googletagmanager.com/gtag/js?id=UA-180809007-1");
+    }
+
+    function injectGTag()
+    {
+        document.getElementById("gtag").setAttribute("src","gtag.js");
+    }
+
+    function hideConsentMessage()
+    {
+        document.getElementById("cookieConsent").style.display = "none";
+    }
+
+    function showConsentMessage()
+    {
+        document.getElementById("cookieConsent").style.display = "block";
+    }
+
     function updateSelected(element)
     {
         var type = element.id;
@@ -398,6 +442,25 @@
             calculate();
         });
         updateAll();
+        if(getCookie("consent") != "true") showConsentMessage();
+    }
+
+    function getCookie(cname) 
+    {
+        //from https://www.w3schools.com/js/js_cookies.asp
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i <ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+            }
+        }
+        return "";
     }
 
     function updateAll()
