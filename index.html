@@ -136,284 +136,22 @@
     var selectedEngine = null;
     var selectedDrill = null;
     var selectedCooler = null;
-    var engines = 
-    [ 
-        "engines",
-        {
-            name : "Junk Engine",
-            multiplier : 1,
-            power : 1
-        },
-        {
-            name : "Steam Engine",
-            multiplier : 1,
-            power : 5
-        },
-        {
-            name : "2 Cylinder Engine",
-            multiplier : 1.5,
-            power : 10
-        },
-        {
-            name : "4 Cylinder Engine",
-            multiplier : 4,
-            power : 10
-        },
-        {
-            name : "6 Cylinder Engine",
-            multiplier : 10,
-            power : 10
-        },
-        {
-            name : "Basic Nuclear Engine",
-            multiplier : 30,
-            power : 20
-        },
-        {
-            name : "Intermediate Nuclear Engine",
-            multiplier : 150,
-            power : 30
-        },
-        {
-            name : "Advanced Nuclear Engine",
-            multiplier : 500,
-            power : 50
-        },
-        {
-            name : "Fission Engine",
-            multiplier : 3000,
-            power : 70
-        },
-        {
-            name : "Drill King Engine",
-            multiplier : 20000,
-            power : 70
-        },
-        {
-            name : "Drill Lord Engine",
-            multiplier : 100000,
-            power : 75
-        },
-        {
-            name : "Seismic Resonance Engine",
-            multiplier : 200000,
-            power : 200
-        },
-        {
-            name : "Gravity Engine",
-            multiplier : 350000,
-            power : 1000
-        },
-        {
-            name : "Core Reactor Engine",
-            multiplier : 500000,
-            power : 5000
-        },
-        {
-            name : "Pressurized Reactor Engine",
-            multiplier : 750000,
-            power : 5000
-        },
-        {
-            name : "Robo Anthropomorphic Engine",
-            multiplier : 1500000,
-            power : 5000
-        },
-        {
-            name : "Rocket Engine",
-            multiplier : 2750000,
-            power : 5000
-        },
-        {
-            name : "Lunar Rocket Engine T1",
-            multiplier : 6750000,
-            power : 5000
-        },
-        {
-            name : "Lunar Rocket Engine T2",
-            multiplier : 20250000,
-            power : 5000
-        },
-        {
-            name : "Lunar Rocket Engine T3",
-            multiplier : 40500000,
-            power : 5000
-        }
-        ];
-    var drills = 
-    [
-        "drills",
-        {
-            name : "Tiny Drill",
-            power : 2
-        },
-        {
-            name : "Copper Drill",
-            power : 5
-        },
-        {
-            name : "Silver Drill",
-            power : 50
-        },
-        {
-            name : "Platinum Drill",
-            power : 300
-        },
-        {
-            name : "TriPlatinum Drill",
-            power : 700
-        },
-        {
-            name : "Spike Drill",
-            power : 1500
-        },
-        {
-            name : "Barbaric Drill",
-            power : 5500
-        },
-        {
-            name : "Monster Drill",
-            power : 9000
-        },
-        {
-            name : "Sifting Drill",
-            power : 20000
-        },
-        {
-            name : "Drill Smasher",
-            power : 40000
-        },
-        {
-            name : "Demon Smasher Drill",
-            power : 80000
-        },
-        {
-            name : "Lava Drill",
-            power : 160000
-        },
-        {
-            name : "Gravity Drill",
-            power : 250000
-        },
-        {
-            name : "Irradiated Drill",
-            power : 500000
-        },
-        {
-            name : "Enhanced Irradiated Drill",
-            power : 800000
-        },
-        {
-            name : "Dual Mantle Destroyer Drill",
-            power : 1250000
-        },
-        {
-            name : "Temperature Hardened Drill",
-            power : 2500000
-        },
-        {
-            name : "Lunar Temperature Hardened Drill T1",
-            power : 6250000
-        },
-        {
-            name : "Lunar Temperature Hardened Drill T2",
-            power : 31250000
-        },
-        {
-            name : "Lunar Temperature Hardened Drill T3",
-            power : 200000000
-        }
-
-    ];
-    var coolers = 
-    [
-        "coolers",
-        {
-            name : "Basic Fan",
-            power : 2
-        },
-        {
-            name : "Double Fan",
-            power : 5
-        },
-        {
-            name : "Triple Fans",
-            power : 25
-        },
-        {
-            name : "Quad Fan",
-            power : 250
-        },
-        {
-            name : "Partinioned Fan",
-            power : 600
-        },
-        {
-            name : "Multi Partinioned Fan",
-            power : 1000
-        },
-        {
-            name : "Heat Pump",
-            power : 3700
-        },
-        {
-            name : "Segmented Heat Pump",
-            power : 6000
-        },
-        {
-            name : "Hydrogen Coolant System",
-            power : 10000
-        },
-        {
-            name : "Bihydrogen Coolant System",
-            power : 20000
-        },
-        {
-            name : "Trihydrogen Coolant System",
-            power : 40000
-        },
-        {
-            name : "Liquid Nitrogen Fan",
-            power : 90000
-        },
-        {
-            name : "Pressure Cooled Fan",
-            power : 180000
-        },
-        {
-            name : "9M PSI Pressure Fan",
-            power : 360000
-        },
-        {
-            name : "Liquid Neon Coolant System",
-            power : 720000
-        },
-        {
-            name : "Helium Coolant System",
-            power : 1000000
-        },
-        {
-            name : "Vacuum Chilled Coolant System",
-            power : 2000000
-        },
-        {
-            name : "Lunar Vacuum Chilled Coolant System T1",
-            power : 5000000
-        },
-        {
-            name : "Lunar Vacuum Chilled Coolant System T2",
-            power : 25000000
-        },
-        {
-            name : "Lunar Vacuum Chilled Coolant System T3",
-            power : 217500000
-        }
-    ];
-
-    populateForm(engines);
-    populateForm(drills);
-    populateForm(coolers);
+    var drills, engines, fans;
+    
+    
     firstload();
+
+    async function getData()
+    {
+        const response = await fetch("data.json");
+        const {Drills, Engines, Fans} = await response.json();
+        this.drills = Drills;
+        this.engines = Engines;
+        this.coolers = Fans;
+        populateForm("engines", this.engines);
+        populateForm("drills", this.drills);
+        populateForm("coolers", this.coolers);
+    }
 
     function consent()
     {
@@ -468,16 +206,16 @@
     function calculate()
     {
         var total = document.getElementById("totalPower");
-        total.innerHTML = numformat(selectedEngine.multiplier * (selectedCooler.power +  selectedDrill.power + selectedEngine.power));
+        total.innerHTML = numformat(selectedEngine.Multiplier * (selectedCooler.Watts +  selectedDrill.Watts + selectedEngine.Watts));
 
         var multiplier = document.getElementById("multiplier"); 
         var enginePower = document.getElementById("enginePower"); 
         var drillPower = document.getElementById("drillPower"); 
         var coolerPower = document.getElementById("coolerPower"); 
-        multiplier.innerHTML = numformat(selectedEngine.multiplier);
-        enginePower.innerHTML = numformat(selectedEngine.power);
-        drillPower.innerHTML = numformat(selectedDrill.power);
-        coolerPower.innerHTML = numformat(selectedCooler.power);
+        multiplier.innerHTML = numformat(selectedEngine.Multiplier);
+        enginePower.innerHTML = numformat(selectedEngine.Watts);
+        drillPower.innerHTML = numformat(selectedDrill.Watts);
+        coolerPower.innerHTML = numformat(selectedCooler.Watts);
     }
 
     function numformat(number)
@@ -490,19 +228,19 @@
         var type = null;
         switch (val.substring(val.length - 1)) {  
             case "e":
-            for (let i = 1; i < engines.length; i++) {
+            for (let i = 0; i < engines.length; i++) {
                 var element = engines[i];
                 if(element.val == val) return element;
             }  
             break;
             case "d":
-            for (let i = 1; i < drills.length; i++) {
+            for (let i = 0; i < drills.length; i++) {
                 var element = drills[i];
                 if(element.val == val) return element;
             }  
             break;
             case "c":
-            for (let i = 1; i < coolers.length; i++) {
+            for (let i = 0; i < coolers.length; i++) {
                 var element = coolers[i];
                 if(element.val == val) return element;
             }
@@ -514,23 +252,24 @@
         return type;
     }
     
-    function populateForm(array)
+    function populateForm(id, array)
     {
-        var type = array[0];
+        var type = id;
         var shorthand = type.substring(0,1);
         var element = document.getElementById(type);
-        for (let i = 1; i < array.length; i++) {
-            var engine = array[i];
+        for (let i = 0; i < array.length; i++) {
+            var part = array[i];
             var option = document.createElement("option");
             option.value = "t" + i + shorthand;
-            engine.val = option.value;
-            option.innerHTML = engine.name;
+            part.val = option.value;
+            option.innerHTML = part.Name;
             element.appendChild(option);
         }
     }
 
-    function firstload() 
+    async function firstload() 
     {
+        await getData();
         document.getElementById("form").addEventListener("submit", function(event){
             event.preventDefault();
             updateAll();
