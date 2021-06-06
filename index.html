@@ -48,6 +48,9 @@
                         </select>
                     </div>
                     <div class="row justify-content-center">
+                        <button type="button" class="btn btn-info mr-3" data-toggle="modal" data-target="#feedbackModal">
+                            Feedback
+                        </button>
                         <a href="https://github.com/aske-w/wattcalc/releases" target="_blank">
                             <button type="button" class="btn btn-info mr-3">
                                 Changelog
@@ -56,7 +59,9 @@
                         <button type="button" class="btn btn-info mr-3" data-toggle="modal" data-target="#guideModal">
                             Guide
                         </button>
-                        <button type="submit" class="btn btn-success">Calculate!</button>
+                        <button type="submit" class="btn btn-success">
+                            Calculate!
+                        </button>
                     </div>
                 </form>
             </div>
@@ -127,6 +132,28 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLabel">Feedback & suggestions</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    If you have any feedback or suggestions, send me a message on the <a href="https://discord.gg/4JFHThTXCW">WattCalc Discord server</a>!
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script id="gtm"></script>
@@ -262,7 +289,7 @@
             var option = document.createElement("option");
             option.value = "t" + i + shorthand;
             part.val = option.value;
-            option.innerHTML = part.Name;
+            option.innerHTML = "Tier " + part.Level + ": " + part.Name;
             element.appendChild(option);
         }
     }
