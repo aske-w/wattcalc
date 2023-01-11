@@ -1,196 +1,214 @@
 {
     "Drills": [
         {
-            "Name": "Tiny Drill",
-            "Level": 1,
-            "Watts": 2.0,
-            "Multiplier": 1.0
-        },
-        {
             "Name": "Copper Drill",
             "Level": 2,
-            "Watts": 5.0,
-            "Multiplier": 1.0
+            "Watts": 5,
+            "Multiplier": 1
         },
         {
             "Name": "Silver Drill",
             "Level": 3,
-            "Watts": 40.0,
-            "Multiplier": 1.0
+            "Watts": 40,
+            "Multiplier": 1
         },
         {
             "Name": "Platinum Drill",
             "Level": 4,
-            "Watts": 300.0,
-            "Multiplier": 1.0
+            "Watts": 300,
+            "Multiplier": 1
         },
         {
             "Name": "TriPlatinum Drill",
             "Level": 5,
-            "Watts": 700.0,
-            "Multiplier": 1.0
+            "Watts": 700,
+            "Multiplier": 1
         },
         {
             "Name": "Spike Drill",
             "Level": 6,
-            "Watts": 1500.0,
-            "Multiplier": 1.0
+            "Watts": 1500,
+            "Multiplier": 1
         },
         {
             "Name": "Barbaric Drill",
             "Level": 7,
-            "Watts": 5500.0,
-            "Multiplier": 1.0
+            "Watts": 5500,
+            "Multiplier": 1
         },
         {
             "Name": "Monster Drill",
             "Level": 8,
-            "Watts": 9900.0,
-            "Multiplier": 1.0
+            "Watts": 15000,
+            "Multiplier": 1
         },
         {
             "Name": "Sifting Drill",
             "Level": 9,
-            "Watts": 23000.0,
-            "Multiplier": 1.0
+            "Watts": 25000,
+            "Multiplier": 1
         },
         {
             "Name": "Drill Smasher",
             "Level": 10,
-            "Watts": 50000.0,
-            "Multiplier": 1.0
+            "Watts": 50000,
+            "Multiplier": 1
         },
         {
             "Name": "Demon Smasher Drill",
             "Level": 11,
-            "Watts": 80000.0,
-            "Multiplier": 1.0
+            "Watts": 80000,
+            "Multiplier": 1
         },
         {
             "Name": "Lava Drill",
             "Level": 12,
-            "Watts": 160000.0,
-            "Multiplier": 1.0
+            "Watts": 160000,
+            "Multiplier": 1
         },
         {
             "Name": "Gravity Drill",
             "Level": 13,
-            "Watts": 275000.0,
-            "Multiplier": 1.0
+            "Watts": 275000,
+            "Multiplier": 1
         },
         {
             "Name": "Irradiated Drill",
             "Level": 14,
-            "Watts": 500000.0,
-            "Multiplier": 1.0
+            "Watts": 500000,
+            "Multiplier": 1
         },
         {
             "Name": "Enhanced Irradiated Drill",
             "Level": 15,
-            "Watts": 850000.0,
-            "Multiplier": 1.0
+            "Watts": 950000,
+            "Multiplier": 1
         },
         {
             "Name": "Dual Mantle Destroyer Drill",
             "Level": 16,
-            "Watts": 1250000.0,
-            "Multiplier": 1.0
+            "Watts": 1250000,
+            "Multiplier": 1
         },
         {
             "Name": "Temperature Hardened Drill",
             "Level": 17,
-            "Watts": 2750000.0,
-            "Multiplier": 1.0
+            "Watts": 2750000,
+            "Multiplier": 1
         },
         {
-            "Name": "",
+            "Name": "Lunar Temperature Hardened Drill T2",
             "Level": 18,
-            "Watts": 6250000.0,
-            "Multiplier": 1.0
+            "Watts": 6250000,
+            "Multiplier": 1
         },
         {
-            "Name": "",
+            "Name": "Lunar Temperature Hardened Drill T3",
             "Level": 19,
-            "Watts": 31250000.0,
-            "Multiplier": 1.0
+            "Watts": 31250000,
+            "Multiplier": 1
         },
         {
-            "Name": "",
+            "Name": "Lunar Temperature Hardened Drill T4",
             "Level": 20,
-            "Watts": 200000000.0,
-            "Multiplier": 1.0
+            "Watts": 200000000,
+            "Multiplier": 1
         },
         {
-            "Name": "",
+            "Name": "Vibration Drill T1",
             "Level": 21,
-            "Watts": 620000000.0,
-            "Multiplier": 1.0
+            "Watts": 620000000,
+            "Multiplier": 1
         },
         {
-            "Name": "",
+            "Name": "Vibration Drill T2",
             "Level": 22,
-            "Watts": 5000000000.0,
-            "Multiplier": 1.0
+            "Watts": 5000000000,
+            "Multiplier": 1
         },
         {
-            "Name": "",
+            "Name": "Vibration Drill T3",
             "Level": 23,
-            "Watts": 15000000000.0,
-            "Multiplier": 1.0
+            "Watts": 15000000000,
+            "Multiplier": 1
         },
         {
-            "Name": "",
+            "Name": "Mounded Drill T1",
             "Level": 24,
-            "Watts": 70000000000.0,
-            "Multiplier": 1.0
+            "Watts": 70000000000,
+            "Multiplier": 1
         },
         {
-            "Name": "",
+            "Name": "Mounded Drill T2",
             "Level": 25,
-            "Watts": 230000000000.0,
-            "Multiplier": 1.0
+            "Watts": 230000000000,
+            "Multiplier": 1
         },
         {
-            "Name": "",
+            "Name": "Mounded Drill T3",
             "Level": 26,
-            "Watts": 821000000000.0,
-            "Multiplier": 1.0
+            "Watts": 821000000000,
+            "Multiplier": 1
         },
         {
-            "Name": "",
+            "Name": "Regolith Agitator Drill T1",
             "Level": 27,
-            "Watts": 3063000000000.0,
-            "Multiplier": 1.0
+            "Watts": 3063000000000,
+            "Multiplier": 1
         },
         {
-            "Name": "",
+            "Name": "Regolith Agitator Drill T2",
             "Level": 28,
-            "Watts": 20000000000000.0,
-            "Multiplier": 1.0
+            "Watts": 24000000000000,
+            "Multiplier": 1
         },
         {
-            "Name": "",
+            "Name": "Regolith Agitator Drill T3",
             "Level": 29,
-            "Watts": 224000000000000.0,
-            "Multiplier": 1.0
+            "Watts": 336000000000000,
+            "Multiplier": 1
         },
         {
-            "Name": "",
+            "Name": "Laser Assisted Drill T1",
             "Level": 30,
-            "Watts": 720000000000000.0,
-            "Multiplier": 1.0
+            "Watts": 1510000000000000,
+            "Multiplier": 1
         },
         {
-            "Name": "",
+            "Name": "Laser Assisted Drill T2",
             "Level": 31,
-            "Watts": 5800000000000000.0,
-            "Multiplier": 1.0
+            "Watts": 5800000000000000,
+            "Multiplier": 1
         },
         {
-            "Name": "",
+            "Name": "Laser Assisted Drill T3",
             "Level": 32,
-            "Watts": 58000000000000000.0,
-            "Multiplier": 1.0
+            "Watts": 58000000000000000,
+            "Multiplier": 1
+        },
+        {
+            "Name": "Submersive Drill T1",
+            "Level": 33,
+            "Watts": 900000000000000000,
+            "Multiplier": 1
+        },
+        {
+            "Name": "Submersive Drill T2",
+            "Level": 34,
+            "Watts": 1900000000000000000,
+            "Multiplier": 1
+        },
+        {
+            "Name": "Submersive Drill T3",
+            "Level": 35,
+            "Watts": 3700000000000000000,
+            "Multiplier": 1
+        },
+        {
+            "Name": "Submersive Drill T4",
+            "Level": 36,
+            "Watts": 6000000000000000000,
+            "Multiplier": 1
         }
     ],
     "Fans": [
