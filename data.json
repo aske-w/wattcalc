@@ -425,196 +425,214 @@
     ],
     "Engines": [
         {
-            "Name": "Junk Engine",
-            "Level": 1,
-            "Watts": 1.0,
-            "Multiplier": 1.0
-        },
-        {
             "Name": "Steam Engine",
             "Level": 2,
-            "Watts": 5.0,
-            "Multiplier": 1.0
+            "Watts": 5,
+            "Multiplier": 1
         },
         {
             "Name": "2 Cylinder Engine",
             "Level": 3,
-            "Watts": 5.0,
-            "Multiplier": 2.0
+            "Watts": 5,
+            "Multiplier": 2
         },
         {
             "Name": "4 Cylinder Engine",
             "Level": 4,
-            "Watts": 10.0,
-            "Multiplier": 4.0
+            "Watts": 10,
+            "Multiplier": 4
         },
         {
             "Name": "6 Cylinder Engine",
             "Level": 5,
-            "Watts": 10.0,
-            "Multiplier": 10.0
+            "Watts": 10,
+            "Multiplier": 10
         },
         {
             "Name": "Basic Nuclear Engine",
             "Level": 6,
-            "Watts": 20.0,
-            "Multiplier": 30.0
+            "Watts": 20,
+            "Multiplier": 30
         },
         {
             "Name": "Intermediate Nuclear Engine",
             "Level": 7,
-            "Watts": 30.0,
-            "Multiplier": 150.0
+            "Watts": 30,
+            "Multiplier": 150
         },
         {
             "Name": "Advanced Nuclear Engine",
             "Level": 8,
-            "Watts": 50.0,
-            "Multiplier": 550.0
+            "Watts": 50,
+            "Multiplier": 650
         },
         {
             "Name": "Fission Engine",
             "Level": 9,
-            "Watts": 70.0,
-            "Multiplier": 3300.0
+            "Watts": 70,
+            "Multiplier": 3300
         },
         {
             "Name": "Drill King Engine",
             "Level": 10,
-            "Watts": 70.0,
-            "Multiplier": 25000.0
+            "Watts": 70,
+            "Multiplier": 25000
         },
         {
             "Name": "Drill Lord Engine",
             "Level": 11,
-            "Watts": 75.0,
-            "Multiplier": 100000.0
+            "Watts": 75,
+            "Multiplier": 100000
         },
         {
             "Name": "Seismic Resonance Engine",
             "Level": 12,
-            "Watts": 200.0,
-            "Multiplier": 200000.0
+            "Watts": 200,
+            "Multiplier": 200000
         },
         {
             "Name": "Gravity Engine",
             "Level": 13,
-            "Watts": 1000.0,
-            "Multiplier": 375000.0
+            "Watts": 1000,
+            "Multiplier": 375000
         },
         {
             "Name": "Core Reactor Engine",
             "Level": 14,
-            "Watts": 5000.0,
-            "Multiplier": 520000.0
+            "Watts": 5000,
+            "Multiplier": 520000
         },
         {
             "Name": "Pressurized Reactor Engine",
             "Level": 15,
-            "Watts": 5000.0,
-            "Multiplier": 850000.0
+            "Watts": 5000,
+            "Multiplier": 950000
         },
         {
             "Name": "Robo Anthropomorphic Engine",
             "Level": 16,
-            "Watts": 5000.0,
-            "Multiplier": 1500000.0
+            "Watts": 5000,
+            "Multiplier": 1500000
         },
         {
             "Name": "Rocket Engine",
             "Level": 17,
-            "Watts": 5000.0,
-            "Multiplier": 3250000.0
+            "Watts": 5000,
+            "Multiplier": 3250000
         },
         {
-            "Name": "",
+            "Name": "Lunar Rocket Engine T2",
             "Level": 18,
-            "Watts": 5000.0,
-            "Multiplier": 6750000.0
+            "Watts": 5000,
+            "Multiplier": 6750000
         },
         {
-            "Name": "",
+            "Name": "Lunar Rocket Engine T3",
             "Level": 19,
-            "Watts": 5000.0,
-            "Multiplier": 20250000.0
+            "Watts": 5000,
+            "Multiplier": 20250000
         },
         {
-            "Name": "",
+            "Name": "Lunar Rocket Engine T4",
             "Level": 20,
-            "Watts": 5000.0,
-            "Multiplier": 40500000.0
+            "Watts": 5000,
+            "Multiplier": 40500000
         },
         {
-            "Name": "",
+            "Name": "Solid Fuel Rocket Engine T1",
             "Level": 21,
-            "Watts": 5000.0,
-            "Multiplier": 165000000.0
+            "Watts": 5000,
+            "Multiplier": 165000000
         },
         {
-            "Name": "",
+            "Name": "Solid Fuel Rocket Engine T2",
             "Level": 22,
-            "Watts": 5000.0,
-            "Multiplier": 400000000.0
+            "Watts": 5000,
+            "Multiplier": 400000000
         },
         {
-            "Name": "",
+            "Name": "Solid Fuel Rocket Engine T3",
             "Level": 23,
-            "Watts": 5000.0,
-            "Multiplier": 1225000000.0
+            "Watts": 5000,
+            "Multiplier": 1225000000
         },
         {
-            "Name": "",
+            "Name": "Bipropellant Rocket Engine T1",
             "Level": 24,
-            "Watts": 5000.0,
-            "Multiplier": 3675000000.0
+            "Watts": 5000,
+            "Multiplier": 3675000000
         },
         {
-            "Name": "",
+            "Name": "Bipropellant Rocket Engine T2",
             "Level": 25,
-            "Watts": 5000.0,
-            "Multiplier": 18000000000.0
+            "Watts": 5000,
+            "Multiplier": 18000000000
         },
         {
-            "Name": "",
+            "Name": "Bipropellant Rocket Engine T3",
             "Level": 26,
-            "Watts": 5000.0,
-            "Multiplier": 90000000000.0
+            "Watts": 5000,
+            "Multiplier": 90000000000
         },
         {
-            "Name": "",
+            "Name": "Reaction Mass Engine T1",
             "Level": 27,
-            "Watts": 5000.0,
-            "Multiplier": 450000000000.0
+            "Watts": 5000,
+            "Multiplier": 450000000000
         },
         {
-            "Name": "",
+            "Name": "Reaction Mass Engine T2",
             "Level": 28,
-            "Watts": 5000.0,
-            "Multiplier": 2600000000000.0
+            "Watts": 5000,
+            "Multiplier": 2600000000000
         },
         {
-            "Name": "",
+            "Name": "Reaction Mass Engine T3",
             "Level": 29,
-            "Watts": 5000.0,
-            "Multiplier": 21000000000000.0
+            "Watts": 5000,
+            "Multiplier": 21000000000000
         },
         {
-            "Name": "",
+            "Name": "Laser Powered Engine T1",
             "Level": 30,
-            "Watts": 5000.0,
-            "Multiplier": 162000000000000.0
+            "Watts": 5000,
+            "Multiplier": 122000000000000
         },
         {
-            "Name": "",
+            "Name": "Laser Powered Engine T2",
             "Level": 31,
-            "Watts": 5000.0,
-            "Multiplier": 1440000000000000.0
+            "Watts": 5000,
+            "Multiplier": 1440000000000000
         },
         {
-            "Name": "",
+            "Name": "Laser Powered Engine T3",
             "Level": 32,
-            "Watts": 5000.0,
-            "Multiplier": 16200000000000000.0
+            "Watts": 5000,
+            "Multiplier": 16200000000000000
+        },
+        {
+            "Name": "Submersive Engine T1",
+            "Level": 33,
+            "Watts": 5000,
+            "Multiplier": 1020000000000000000
+        },
+        {
+            "Name": "Submersive Engine T2",
+            "Level": 34,
+            "Watts": 5000,
+            "Multiplier": 2240000000000000000
+        },
+        {
+            "Name": "Submersive Engine T3",
+            "Level": 35,
+            "Watts": 5000,
+            "Multiplier": 4100000000000000000
+        },
+        {
+            "Name": "Submersive Engine T4",
+            "Level": 36,
+            "Watts": 5000,
+            "Multiplier": 6500000000000000000
         }
     ]
 }
