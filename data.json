@@ -209,6 +209,30 @@
             "Level": 36,
             "Watts": 6000000000000000000,
             "Multiplier": 1
+        },
+		{
+            "Name": "Nautical Drill T1",
+            "Level": 37,
+            "Watts": 50000000000000000000,
+            "Multiplier": 1
+        },
+        {
+            "Name": "Nautical Drill T2",
+            "Level": 38,
+            "Watts": 150000000000000000000,
+            "Multiplier": 1
+        },
+        {
+            "Name": "Nautical Drill T3",
+            "Level": 39,
+            "Watts": 900000000000000000000,
+            "Multiplier": 1
+        },
+        {
+            "Name": "Nautical Drill T4",
+            "Level": 40,
+            "Watts": 3300000000000000000000,
+            "Multiplier": 1
         }
     ],
     "Fans": [
@@ -420,6 +444,30 @@
             "Name": "Submersive Heat Disperser T4",
             "Level": 36,
             "Watts": 6100000000000000000,
+            "Multiplier": 1
+        },
+		{
+            "Name": "Nautical Heat Disperser T1",
+            "Level": 37,
+            "Watts": 55000000000000000000,
+            "Multiplier": 1
+        },
+        {
+            "Name": "Nautical Heat Disperser T2",
+            "Level": 38,
+            "Watts": 180000000000000000000,
+            "Multiplier": 1
+        },
+        {
+            "Name": "Nautical Heat Disperser T3",
+            "Level": 39,
+            "Watts": 950000000000000000000,
+            "Multiplier": 1
+        },
+        {
+            "Name": "Nautical Heat Disperser T4",
+            "Level": 40,
+            "Watts": 3600000000000000000000,
             "Multiplier": 1
         }
     ],
@@ -633,6 +681,30 @@
             "Level": 36,
             "Watts": 5000,
             "Multiplier": 6500000000000000000
+        },
+		{
+            "Name": "Nautical Engine T1",
+            "Level": 37,
+            "Watts": 5000,
+            "Multiplier": 60000000000000000000
+        },
+        {
+            "Name": "Nautical Engine T2",
+            "Level": 38,
+            "Watts": 5000,
+            "Multiplier": 200000000000000000000
+        },
+        {
+            "Name": "Nautical Engine T3",
+            "Level": 39,
+            "Watts": 5000,
+            "Multiplier": 1000000000000000000000
+        },
+        {
+            "Name": "Nautical Engine T4",
+            "Level": 40,
+            "Watts": 5000,
+            "Multiplier": 4000000000000000000000
         }
     ]
 }
