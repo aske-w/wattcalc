@@ -135,7 +135,7 @@
         {
             "Name": "Mounded Drill T1",
             "Level": 24,
-            "Watts": 70000000000,
+            "Watts": 80000000000,
             "Multiplier": 1
         },
         {
@@ -147,19 +147,19 @@
         {
             "Name": "Mounded Drill T3",
             "Level": 26,
-            "Watts": 821000000000,
+            "Watts": 1021000000000,
             "Multiplier": 1
         },
         {
             "Name": "Regolith Agitator Drill T1",
             "Level": 27,
-            "Watts": 3063000000000,
+            "Watts": 4363000000000,
             "Multiplier": 1
         },
         {
             "Name": "Regolith Agitator Drill T2",
             "Level": 28,
-            "Watts": 24000000000000,
+            "Watts": 28000000000000,
             "Multiplier": 1
         },
         {
@@ -171,67 +171,85 @@
         {
             "Name": "Laser Assisted Drill T1",
             "Level": 30,
-            "Watts": 1510000000000000,
+            "Watts": 7510000000000000,
             "Multiplier": 1
         },
         {
             "Name": "Laser Assisted Drill T2",
             "Level": 31,
-            "Watts": 5800000000000000,
+            "Watts": 55800000000000000,
             "Multiplier": 1
         },
         {
             "Name": "Laser Assisted Drill T3",
             "Level": 32,
-            "Watts": 58000000000000000,
+            "Watts": 100000000000000000,
             "Multiplier": 1
         },
         {
             "Name": "Submersive Drill T1",
             "Level": 33,
-            "Watts": 900000000000000000,
+            "Watts": 450000000000000000,
             "Multiplier": 1
         },
         {
             "Name": "Submersive Drill T2",
             "Level": 34,
-            "Watts": 1900000000000000000,
+            "Watts": 950000000000000000,
             "Multiplier": 1
         },
         {
             "Name": "Submersive Drill T3",
             "Level": 35,
-            "Watts": 3700000000000000000,
+            "Watts": 2250000000000000000,
             "Multiplier": 1
         },
         {
             "Name": "Submersive Drill T4",
             "Level": 36,
-            "Watts": 6000000000000000000,
+            "Watts": 32500000000000000000,
             "Multiplier": 1
         },
-		{
+        {
             "Name": "Nautical Drill T1",
             "Level": 37,
-            "Watts": 50000000000000000000,
+            "Watts": 260000000000000000000,
             "Multiplier": 1
         },
         {
             "Name": "Nautical Drill T2",
             "Level": 38,
-            "Watts": 150000000000000000000,
+            "Watts": 2100000000000000000000,
             "Multiplier": 1
         },
         {
             "Name": "Nautical Drill T3",
             "Level": 39,
-            "Watts": 900000000000000000000,
+            "Watts": 20000000000000000000000,
             "Multiplier": 1
         },
         {
             "Name": "Nautical Drill T4",
             "Level": 40,
-            "Watts": 3300000000000000000000,
+            "Watts": 200000000000000000000000,
+            "Multiplier": 1
+        },
+        {
+            "Name": "Hydronaut Drill T1",
+            "Level": 41,
+            "Watts": 500000000000000000000000,
+            "Multiplier": 1
+        },
+        {
+            "Name": "Hydronaut Drill T2",
+            "Level": 42,
+            "Watts": 750000000000000000000000,
+            "Multiplier": 1
+        },
+        {
+            "Name": "Hydronaut Drill T3",
+            "Level": 43,
+            "Watts": 4500000000000000000000000,
             "Multiplier": 1
         }
     ],
@@ -371,7 +389,7 @@
         {
             "Name": "Conductive Heat Disperser T1",
             "Level": 24,
-            "Watts": 100000000000,
+            "Watts": 150000000000,
             "Multiplier": 1
         },
         {
@@ -383,19 +401,19 @@
         {
             "Name": "Conductive Heat Disperser T3",
             "Level": 26,
-            "Watts": 875000000000,
+            "Watts": 1000000000000,
             "Multiplier": 1
         },
         {
             "Name": "Thermal Balancer T1",
             "Level": 27,
-            "Watts": 5025000000000,
+            "Watts": 5525000000000,
             "Multiplier": 1
         },
         {
             "Name": "Thermal Balancer T2",
             "Level": 28,
-            "Watts": 21500000000000,
+            "Watts": 24500000000000,
             "Multiplier": 1
         },
         {
@@ -407,67 +425,85 @@
         {
             "Name": "Radiant Heat Disperser T1",
             "Level": 30,
-            "Watts": 1875000000000000,
+            "Watts": 7575000000000000,
             "Multiplier": 1
         },
         {
             "Name": "Radiant Heat Disperser T2",
             "Level": 31,
-            "Watts": 6800000000000000,
+            "Watts": 50500000000000000,
             "Multiplier": 1
         },
         {
             "Name": "Radiant Heat Disperser T3",
             "Level": 32,
-            "Watts": 80000000000000000,
+            "Watts": 120000000000000000,
             "Multiplier": 1
         },
         {
             "Name": "Submersive Heat Disperser T1",
             "Level": 33,
-            "Watts": 950000000000000000,
+            "Watts": 475000000000000000,
             "Multiplier": 1
         },
         {
             "Name": "Submersive Heat Disperser T2",
             "Level": 34,
-            "Watts": 1950000000000000000,
+            "Watts": 975000000000000000000,
             "Multiplier": 1
         },
         {
             "Name": "Submersive Heat Disperser T3",
             "Level": 35,
-            "Watts": 3800000000000000000,
+            "Watts": 3000000000000000000,
             "Multiplier": 1
         },
         {
             "Name": "Submersive Heat Disperser T4",
             "Level": 36,
-            "Watts": 6100000000000000000,
+            "Watts": 30000000000000000000,
             "Multiplier": 1
         },
 		{
             "Name": "Nautical Heat Disperser T1",
             "Level": 37,
-            "Watts": 55000000000000000000,
+            "Watts": 270000000000000000000,
             "Multiplier": 1
         },
         {
             "Name": "Nautical Heat Disperser T2",
             "Level": 38,
-            "Watts": 180000000000000000000,
+            "Watts": 2800000000000000000000,
             "Multiplier": 1
         },
         {
             "Name": "Nautical Heat Disperser T3",
             "Level": 39,
-            "Watts": 950000000000000000000,
+            "Watts": 37000000000000000000000,
             "Multiplier": 1
         },
         {
             "Name": "Nautical Heat Disperser T4",
             "Level": 40,
-            "Watts": 3600000000000000000000,
+            "Watts": 200000000000000000000000,
+            "Multiplier": 1
+        },
+        {
+            "Name": "Hydronaut Heat Disperser T1",
+            "Level": 41,
+            "Watts": 500000000000000000000000,
+            "Multiplier": 1
+        },
+        {
+            "Name": "Hydronaut Heat Disperser T2",
+            "Level": 42,
+            "Watts": 750000000000000000000000,
+            "Multiplier": 1
+        },
+        {
+            "Name": "Hydronaut Heat Disperser T3",
+            "Level": 43,
+            "Watts": 3000000000000000000000000,
             "Multiplier": 1
         }
     ],
@@ -608,7 +644,7 @@
             "Name": "Bipropellant Rocket Engine T1",
             "Level": 24,
             "Watts": 5000,
-            "Multiplier": 3675000000
+            "Multiplier": 4075000000
         },
         {
             "Name": "Bipropellant Rocket Engine T2",
@@ -620,19 +656,19 @@
             "Name": "Bipropellant Rocket Engine T3",
             "Level": 26,
             "Watts": 5000,
-            "Multiplier": 90000000000
+            "Multiplier": 100000000000
         },
         {
             "Name": "Reaction Mass Engine T1",
             "Level": 27,
             "Watts": 5000,
-            "Multiplier": 450000000000
+            "Multiplier": 500000000000
         },
         {
             "Name": "Reaction Mass Engine T2",
             "Level": 28,
             "Watts": 5000,
-            "Multiplier": 2600000000000
+            "Multiplier": 3000000000000
         },
         {
             "Name": "Reaction Mass Engine T3",
@@ -644,19 +680,19 @@
             "Name": "Laser Powered Engine T1",
             "Level": 30,
             "Watts": 5000,
-            "Multiplier": 122000000000000
+            "Multiplier": 162000000000000
         },
         {
             "Name": "Laser Powered Engine T2",
             "Level": 31,
             "Watts": 5000,
-            "Multiplier": 1440000000000000
+            "Multiplier": 7510000000000000
         },
         {
             "Name": "Laser Powered Engine T3",
             "Level": 32,
             "Watts": 5000,
-            "Multiplier": 16200000000000000
+            "Multiplier": 19000000000000000
         },
         {
             "Name": "Submersive Engine T1",
@@ -682,7 +718,7 @@
             "Watts": 5000,
             "Multiplier": 6500000000000000000
         },
-		{
+        {
             "Name": "Nautical Engine T1",
             "Level": 37,
             "Watts": 5000,
@@ -705,6 +741,24 @@
             "Level": 40,
             "Watts": 5000,
             "Multiplier": 4000000000000000000000
+        },
+        {
+            "Name": "Hydronaut Engine T1",
+            "Level": 41,
+            "Watts": 5000,
+            "Multiplier": 175000000000000000000000
+        },
+        {
+            "Name": "Hydronaut Engine T2",
+            "Level": 42,
+            "Watts": 5000,
+            "Multiplier": 370000000000000000000000
+        },
+        {
+            "Name": "Hydronaut Engine T3",
+            "Level": 43,
+            "Watts": 5000,
+            "Multiplier": 1220000000000000000000000
         }
     ]
 }
